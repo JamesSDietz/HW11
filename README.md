@@ -1,2 +1,3 @@
 # HW11
-HTML homework
+HTML homework from James Dietz
+Data Analytics and Visualization Cohort 3

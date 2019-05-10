@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<!--James Dietz, HW #11, Data Analytics, Cohort #3-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Latitude Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+    
+            <!-- Links and toggle -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--left navbar link-->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">L A T I T U D E
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--Right navbar toggle and links-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="temperature.html">Max Temperature</a>
+                            </li>
+                            <li>
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--Main Grid-->
+    <div class= "container">
+        <div class= "row">
+            <div class= "col-md-8">
+                <div class= "main-box">
+                <h1>Examining Latitude and Weather Factors</h1>
+                <hr>
+                <div class= "summary txt">
+                    <img id= "main-img" src= "Fig1.png", alt= "Temperature vs. Latitude">
+                    <p>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator.  
+                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  
+                    </p>
+                    
+                    <p>
+                        After assembling the dataset, we used Matplotlib, to plot various aspects of the weather vs. latitude.  
+                        Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the sourced
+                        data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations observed.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <!--Sidebar Visualizations-->
+            <div class= "col-md-4">
+                <div class= "side-box">
+                <h2><center>Visualizations</center></h2>
+                <hr>
+                <div class= "sidebar">
+                    <a href= "temperature.html"><img id= "side-img1" src= "Fig1.png", alt= "Temperature vs. Latitude Scatterplot"></a>
+                    <a href= "humidity.html"><img id= "side-img2" src= "Fig2.png", alt= "Humidity vs. Latitude Scatterplot"></a>
+                    <a href= "cloudiness.html"><img id= "side-img3" src= "Fig3.png", alt= "Cloudiness vs. Latitude Scatterplot"></a>
+                    <a href= "wind.html"><img id= "side-img4" src= "Fig4.png", alt= "Wind Speed vs. Latitude Scatterplot"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer with a sense of humor ;)-->
+    <div class= "container-fluid bottom-footer page-footer">
+        <div class= "row">
+            <div class= "col text-center"
+             id= "footer-txt">
+              <p>  &copy; L A T I T U D E <br>We put <em>tude</em> in latitude
+            </p>
+            </div>
+        </div>
+    </div>
+<br>
+</body>
+</html>
+<br>
+© 2019 
